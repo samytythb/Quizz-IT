@@ -2,7 +2,7 @@ package com.Iter.model.Tech.exam;
 
 import javax.persistence.*;
 @Entity
-@Table(name = "question")
+//@Table(name = "question")
 public class Question {
 
     @Id
@@ -17,7 +17,7 @@ public class Question {
     private String option4;
     private String answer;
 
-    @ManyToOne(fetch= FetchType.EAGER)
+    @ManyToOne(fetch= FetchType.LAZY)
     private Quiz quiz;
 
     public Question() {
@@ -105,4 +105,5 @@ public class Question {
     public void setQuiz(Quiz quiz) {
         this.quiz = quiz;
     }
+
 }

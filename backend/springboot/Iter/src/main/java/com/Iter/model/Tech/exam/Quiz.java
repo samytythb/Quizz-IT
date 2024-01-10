@@ -9,12 +9,11 @@ import java.util.Set;
 
 
 @Entity
-@Table(name="quiz")
+//@Table(name="quiz")
 public class Quiz {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-
     private Long qid;
 
     private String title;
